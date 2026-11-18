@@ -1,0 +1,147 @@
+{
+  "types": [
+    {
+      "id": "todo",
+      "label": "Todo"
+    },
+    {
+      "id": "actividades",
+      "label": "Actividades"
+    },
+    {
+      "id": "videos",
+      "label": "Videos"
+    },
+    {
+      "id": "juegos",
+      "label": "Juegos"
+    },
+    {
+      "id": "plataformas",
+      "label": "Plataformas"
+    },
+    {
+      "id": "materiales",
+      "label": "Materiales"
+    }
+  ],
+  "levels": [
+    {
+      "id": "todos",
+      "label": "Todos"
+    },
+    {
+      "id": "preescolar",
+      "label": "Preescolar"
+    },
+    {
+      "id": "primaria-baja",
+      "label": "Primaria baja"
+    },
+    {
+      "id": "docentes",
+      "label": "Docentes"
+    }
+  ],
+  "items": [
+    {
+      "id": "isla-mayusculas",
+      "experience_id": "isla-mayusculas",
+      "title": "Isla Mayúsculas",
+      "types": [
+        "actividades",
+        "juegos"
+      ],
+      "levels": [
+        "preescolar",
+        "primaria-baja"
+      ],
+      "text": "Juega con Tuti y reconoce las vocales.",
+      "url": "https://newtoonaprende.com/recreo/isla-mayusculas/",
+      "art": "tuti"
+    },
+    {
+      "id": "lectoaventuras",
+      "experience_id": "lectoaventuras",
+      "title": "Cuentos de Lectoaventuras",
+      "types": [
+        "plataformas",
+        "actividades"
+      ],
+      "levels": [
+        "preescolar",
+        "primaria-baja"
+      ],
+      "text": "Cuentos para leer y conversar con una persona adulta.",
+      "url": "https://lectoescritura.newtoonaprende.com/",
+      "art": "libro"
+    },
+    {
+      "id": "la-banda-imaginantes",
+      "experience_id": "la-banda-imaginantes",
+      "title": "La Banda Imaginantes · Forma la banda",
+      "types": [
+        "juegos"
+      ],
+      "levels": [
+        "preescolar",
+        "primaria-baja"
+      ],
+      "text": "Descubre los instrumentos y activa a los músicos en el concierto.",
+      "url": "https://newtoonaprende.com/juegos/la-banda-imaginantes/",
+      "art": "musica"
+    },
+    {
+      "id": "pecesita-rescate-mar",
+      "experience_id": "pecesita-rescate-mar",
+      "title": "Pecesita al Rescate del Mar",
+      "types": [
+        "juegos"
+      ],
+      "levels": [
+        "preescolar",
+        "primaria-baja"
+      ],
+      "text": "Un juego para ayudar a limpiar el mar.",
+      "url": "https://newtoonaprende.com/juegos/pecesita/",
+      "art": "mar"
+    },
+    {
+      "id": "tarjetas-vocales",
+      "title": "Tarjetas de vocales (PDF)",
+      "types": [
+        "materiales"
+      ],
+      "levels": [
+        "docentes",
+        "preescolar"
+      ],
+      "text": "Para señalar, comparar y agrupar vocales sin pantalla.",
+      "url": "https://newtoonaprende.com/materiales/tarjetas-vocales-newtoon.pdf",
+      "art": "tarjetas",
+      "file": "PDF"
+    },
+    {
+      "id": "canal-youtube",
+      "title": "Videos de Newtoon en YouTube",
+      "types": [
+        "videos"
+      ],
+      "levels": [
+        "preescolar",
+        "primaria-baja"
+      ],
+      "text": "El canal oficial con los videos públicos. Se abre en YouTube.",
+      "url": "https://www.youtube.com/channel/UCloN40dTP9pm37-pCFU_1UQ",
+      "art": "video",
+      "adult_note": "Enlace externo: YouTube aplica sus propias políticas."
+    }
+  ],
+  "suggestions": [
+    "vocales",
+    "cuentos",
+    "juegos",
+    "música",
+    "mar"
+  ]
+}

@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="es-419">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Instituciones · Newtoon</title>
+<meta name="description" content="Newtoon para escuelas e instituciones: experiencias que el grupo puede repetir, acompañar y aprovechar durante el ciclo escolar.">
+<meta name="theme-color" content="#e9dcc6">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<link rel="canonical" href="https://newtoonaprende.com/instituciones/">
+<!-- nt-root: ruta a la raíz del proyecto · nt-page: datos en data/pages/<página>.json -->
+<meta name="nt-root" content="../">
+<meta name="nt-page" content="instituciones">
+<link rel="stylesheet" href="../shared/paper.css">
+<link rel="stylesheet" href="../shared/room/room.css">
+<script type="importmap">
+{ "imports": { "three": "../vendor/three/three.module.min.js", "three/addons/": "../vendor/three/addons/" } }
+</script>
+</head>
+<body class="is-loading">
+<a class="skip" href="#main" data-i18n="skip">Saltar al contenido</a>
+<div class="stage2d" id="stage2d" aria-hidden="true"></div>
+<canvas id="world" class="world" aria-hidden="true"></canvas>
+<div class="vignette" aria-hidden="true"></div>
+
+<header class="top">
+  <a class="brand" id="brand" href="../"><img id="brandLogo" alt="" width="180" height="59"></a>
+  <div class="tools">
+    <button class="tbtn" id="menuBtn" type="button" aria-haspopup="dialog" aria-controls="menu">Menú</button>
+    <button class="tbtn icon" id="musicBtn" type="button" aria-pressed="true">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18V6l10-2v12"/><circle cx="6.5" cy="18" r="2.5" fill="currentColor"/><circle cx="16.5" cy="16" r="2.5" fill="currentColor"/><path class="off" d="M4 4l16 16"/></svg>
+    </button>
+    <button class="tbtn icon" id="soundBtn" type="button" aria-pressed="true">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 9h4l5-4v14l-5-4H4z" fill="currentColor"/><path class="on" d="M16.5 8.5a5 5 0 0 1 0 7"/><path class="on" d="M19 6a8.5 8.5 0 0 1 0 12"/><path class="off" d="M17 9l5 6M22 9l-5 6"/></svg>
+    </button>
+  </div>
+</header>
+
+<main class="dock" id="main" tabindex="-1">
+  <section class="card paper pin" aria-labelledby="zTitle">
+    <p class="eyebrow" id="zNum"></p>
+    <h1 class="title" id="zTitle" tabindex="-1"></h1>
+    <p class="draft-chip" id="zDraft" hidden>Borrador en revisión</p>
+    <p class="kid" id="zText"></p>
+    <div class="actions" id="zActions"></div>
+    <div class="touch" id="touch" hidden><p class="touch-label" id="touchLabel"></p><div class="touch-row" id="touchRow"></div></div>
+  </section>
+  <nav class="scrub" id="scrub">
+    <div class="stops" id="stops"></div>
+    <div class="row">
+      <button class="navb" id="prev" type="button"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg></button>
+      <input type="range" id="slider" min="0" max="1000" value="0">
+      <button class="navb" id="next" type="button"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg></button>
+    </div>
+    <p class="hint" id="hint" data-i18n="drag_hint"></p>
+  </nav>
+</main>
+
+<div class="panel-side paper" id="panel" role="dialog" aria-modal="false" aria-labelledby="panelTitle" hidden>
+  <div class="ph"><p id="panelKicker"></p><h2 id="panelTitle" tabindex="-1"></h2><button class="close" id="panelClose" type="button"><span aria-hidden="true">×</span></button></div>
+  <div class="pb" id="panelBody" tabindex="0" role="region" aria-label="Detalle"></div>
+</div>
+
+<div class="panel" id="menu" role="dialog" aria-modal="true" aria-labelledby="menuTitle" hidden>
+  <div class="sheet paper">
+    <button class="close" id="menuClose" type="button"><span aria-hidden="true">×</span></button>
+    <h2 id="menuTitle">Menú</h2>
+    <nav aria-label="Principal"><ul class="nav-list" id="navList"></ul></nav>
+    <h3>Ajustes</h3>
+    <div class="switches">
+      <label class="switch"><input type="checkbox" id="optMusic"><span data-i18n="music_on"></span></label>
+      <label class="switch"><input type="checkbox" id="optSound"><span data-i18n="sound_on"></span></label>
+      <label class="switch"><input type="checkbox" id="optLow"><span data-i18n="quality_label"></span></label>
+      <p class="help" data-i18n="quality_help"></p>
+    </div>
+    <p class="legal" id="legal"></p>
+  </div>
+</div>
+
+<div class="gate" id="gate" role="dialog" aria-modal="true" aria-labelledby="gateTitle">
+  <div class="gate-card">
+    <img class="gate-logo" id="gateLogo" alt="" width="260" height="85">
+    <h2 id="gateTitle"></h2>
+    <p class="gate-sub" id="gateSub"></p>
+    <button class="enter" id="enterBtn" type="button" data-i18n="gate_enter"></button>
+    <button class="quiet" id="quietBtn" type="button" data-i18n="gate_quiet"></button>
+    <p class="gate-hint" data-i18n="gate_hint"></p>
+    <p class="gate-status" id="gateStatus" role="status"></p>
+  </div>
+</div>
+
+<p class="notice paper" id="notice" role="status" hidden></p>
+<div class="bubble" id="bubble" aria-hidden="true"></div>
+<div class="tip" id="tip" aria-hidden="true"></div>
+<div class="sr-only" id="live" aria-live="polite"></div>
+<div class="data-error paper" id="dataError" hidden><p>No pudimos cargar esta página en este momento.</p><ul><li><a href="../">Inicio</a></li><li><a href="../recreo/">Recreo Newtoon</a></li><li><a href="../sala-docentes/">Sala de docentes</a></li><li><a href="../hogar/">Hogar</a></li><li><a href="../instituciones/">Instituciones</a></li></ul></div>
+<noscript><div class="data-error paper"><p><b>Instituciones</b>. Activa JavaScript para recorrer la sala de papel.</p><ul><li><b>Lo que a los niños les encanta, convertido en experiencias que el grupo repite</b> Experiencias breves que la docente puede iniciar, acompañar, repetir y observar con su grupo, en el aula y en casa.</li><li><b>El reto en el aula</b> Mucho contenido sin secuencia, poco tiempo para convertirlo en aprendizaje y familias que quieren acompañar sin sobrecarga.</li><li><b>YouTube descubre. Newtoon lo convierte en ritual.</b> Descubrir, iniciar, acompañar, practicar, observar y volver: el aula genera la repetición.</li><li><b>Qué incluye hoy</b> Seis componentes disponibles y dos en definición. Solo listamos lo que ya existe o está aprobado.</li><li><b>Hablemos sobre una implementación</b> Privacidad desde el diseño y pilotos definidos antes de empezar. Las condiciones, la disponibilidad y los precios están por definir.</li></ul><ul><li><a href="../">Inicio</a></li><li><a href="../recreo/">Recreo Newtoon</a></li><li><a href="../sala-docentes/">Sala de docentes</a></li><li><a href="../hogar/">Hogar</a></li><li><a href="../instituciones/">Instituciones</a></li></ul></div></noscript>
+
+<script type="module" src="../shared/room/room.js"></script>
+</body>
+</html>

@@ -1,0 +1,216 @@
+{
+  "islands": [
+    {
+      "id": "isla-mayusculas",
+      "label": "Isla Mayúsculas",
+      "route_id": "ruta-vocales-lenguaje",
+      "scene": "laguna",
+      "guide_character": "tuti",
+      "kid_title": "Isla Mayúsculas",
+      "kid_text": "Juega con Tuti y escucha las vocales.",
+      "experience_ids": [
+        "isla-mayusculas"
+      ],
+      "palette": {
+        "wall": "#e08a2c",
+        "lip": "#bb6c18",
+        "r0": "#eba24c",
+        "r1": "#4c6cbc",
+        "r2": "#4565b5",
+        "floor": "#3d5cab",
+        "accent": "#b85f0c"
+      },
+      "touch": {
+        "label": "Toca una vocal",
+        "items": [
+          {
+            "id": "vocal-a",
+            "kind": "educativa",
+            "text": "A",
+            "say": "a... Abeja",
+            "word": "Abeja"
+          },
+          {
+            "id": "vocal-e",
+            "kind": "educativa",
+            "text": "E",
+            "say": "e... Estrella",
+            "word": "Estrella"
+          },
+          {
+            "id": "vocal-i",
+            "kind": "educativa",
+            "text": "I",
+            "say": "i... Iglú",
+            "word": "Iglú"
+          },
+          {
+            "id": "vocal-o",
+            "kind": "educativa",
+            "text": "O",
+            "say": "o... Oso",
+            "word": "Oso"
+          },
+          {
+            "id": "vocal-u",
+            "kind": "educativa",
+            "text": "U",
+            "say": "u... Uva",
+            "word": "Uva"
+          }
+        ],
+        "note": [
+          "Toca una vocal",
+          "y escucha su sonido."
+        ]
+      }
+    },
+    {
+      "id": "isla-cuentos",
+      "label": "Cuentos",
+      "scene": "bosque",
+      "guide_character": "kikino",
+      "kid_title": "Cuentos",
+      "kid_text": "Kikino te espera para leer un cuento.",
+      "experience_ids": [
+        "lectoaventuras"
+      ],
+      "palette": {
+        "wall": "#7f9a5c",
+        "lip": "#5d7740",
+        "r0": "#8fac69",
+        "r1": "#9cba76",
+        "r2": "#a8c481",
+        "floor": "#b3cd8b",
+        "accent": "#4f6d31"
+      },
+      "touch": null
+    },
+    {
+      "id": "isla-juegos",
+      "label": "Juegos",
+      "scene": "patio",
+      "guide_character": "kikino",
+      "kid_title": "Juegos",
+      "kid_text": "Forma una banda o ayuda a limpiar el mar.",
+      "experience_ids": [
+        "la-banda-imaginantes",
+        "pecesita-rescate-mar"
+      ],
+      "palette": {
+        "wall": "#d77a69",
+        "lip": "#b65e4f",
+        "r0": "#e6a091",
+        "r1": "#ecae9f",
+        "r2": "#f0bbad",
+        "floor": "#f2cbbd",
+        "accent": "#a8412f"
+      },
+      "touch": {
+        "label": "Salta y cuenta",
+        "items": [
+          {
+            "id": "rayuela-1",
+            "kind": "educativa",
+            "text": "1",
+            "say": "Uno"
+          },
+          {
+            "id": "rayuela-2",
+            "kind": "educativa",
+            "text": "2",
+            "say": "Dos"
+          },
+          {
+            "id": "rayuela-3",
+            "kind": "educativa",
+            "text": "3",
+            "say": "Tres"
+          },
+          {
+            "id": "rayuela-4",
+            "kind": "educativa",
+            "text": "4",
+            "say": "Cuatro"
+          },
+          {
+            "id": "rayuela-5",
+            "kind": "educativa",
+            "text": "5",
+            "say": "Cinco"
+          },
+          {
+            "id": "rayuela-6",
+            "kind": "educativa",
+            "text": "6",
+            "say": "Seis"
+          }
+        ],
+        "note": [
+          "Salta en la rayuela",
+          "y cuenta en voz alta."
+        ]
+      }
+    }
+  ],
+  "experiences": [
+    {
+      "id": "isla-mayusculas",
+      "title": "Isla Mayúsculas",
+      "type": "juego",
+      "kid_text": "Entra a la experiencia de vocales con Tuti.",
+      "cta": "Jugar con Tuti",
+      "url": "https://newtoonaprende.com/recreo/isla-mayusculas/",
+      "character_ids": [
+        "tuti"
+      ],
+      "published_on": [
+        "/recreo/",
+        "/hogar/",
+        "/sala-docentes/"
+      ]
+    },
+    {
+      "id": "lectoaventuras",
+      "title": "Cuentos de Lectoaventuras",
+      "type": "cuento",
+      "kid_text": "Elige un cuento y compártelo con una persona adulta.",
+      "cta": "Elegir un cuento",
+      "url": "https://lectoescritura.newtoonaprende.com/",
+      "character_ids": [],
+      "published_on": [
+        "/recreo/",
+        "/hogar/"
+      ]
+    },
+    {
+      "id": "la-banda-imaginantes",
+      "title": "La Banda Imaginantes · Forma la banda",
+      "type": "juego",
+      "kid_text": "Descubre los instrumentos y activa a los músicos en el concierto.",
+      "cta": "Formar la banda",
+      "url": "https://newtoonaprende.com/juegos/la-banda-imaginantes/",
+      "character_ids": [],
+      "published_on": [
+        "/recreo/"
+      ]
+    },
+    {
+      "id": "pecesita-rescate-mar",
+      "title": "Pecesita al Rescate del Mar",
+      "type": "juego",
+      "kid_text": "Ayuda a limpiar el mar junto a una persona adulta.",
+      "cta": "Limpiar el mar",
+      "url": "https://newtoonaprende.com/juegos/pecesita/",
+      "character_ids": [],
+      "published_on": [
+        "/recreo/"
+      ]
+    }
+  ],
+  "more": {
+    "id": "explorar",
+    "label": "Más cuentos, videos y juegos",
+    "url": "https://newtoonaprende.com/#explorar"
+  }
+}

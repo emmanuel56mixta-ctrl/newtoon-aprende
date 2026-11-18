@@ -1,0 +1,227 @@
+{
+  "id": "sala-docentes",
+  "surface": "sala-docentes",
+  "title": "Sala de docentes · Newtoon",
+  "zone_word": "Estación",
+  "gate": {
+    "title": "Sala de docentes",
+    "sub": "Organiza un momento de aprendizaje con tu grupo"
+  },
+  "start": "aula",
+  "session": "vocales-isla-mayusculas",
+  "zones": [
+    {
+      "id": "aula",
+      "label": "El aula",
+      "scene": "aula",
+      "ambience": "calma",
+      "palette": {
+        "wall": "#8e9bd4",
+        "lip": "#6e7cba",
+        "r0": "#a7b2e0",
+        "r1": "#b5bfe7",
+        "r2": "#c2cbed",
+        "floor": "#ced5f1",
+        "accent": "#2f3b78"
+      },
+      "sign": {
+        "title": "Sala de docentes",
+        "sub": "¡Aprendemos jugando!"
+      },
+      "chalk": [
+        "a e i o u",
+        "Reconocer una vocal"
+      ],
+      "greeting": "a, e, i, o, u",
+      "fallback_art": "illu:pizarron",
+      "card": {
+        "title": "Sala de docentes",
+        "text": "Organiza un momento de aprendizaje con tu grupo, reutilizando una experiencia con conversación, juego y materiales.",
+        "actions": [
+          {
+            "label": "Abrir Isla Mayúsculas",
+            "href": "https://newtoonaprende.com/recreo/isla-mayusculas/",
+            "style": "primary",
+            "external": true
+          },
+          {
+            "label": "Ver la sesión sugerida",
+            "zone": "sesion",
+            "style": "secondary"
+          }
+        ]
+      }
+    },
+    {
+      "id": "varias-sesiones",
+      "label": "Varias sesiones",
+      "scene": "calendario",
+      "ambience": "calma",
+      "palette": {
+        "wall": "#7fa7a0",
+        "lip": "#618a83",
+        "r0": "#a2c1bb",
+        "r1": "#afcac5",
+        "r2": "#bcd3cf",
+        "floor": "#c9dcd8",
+        "accent": "#2f5a53"
+      },
+      "sign": {
+        "title": "Una experiencia, varias sesiones",
+        "sub": "Retómala con otra vocal"
+      },
+      "sessions": [
+        "Sesión 1 · A",
+        "Sesión 2 · E",
+        "Sesión 3 · I"
+      ],
+      "fallback_art": "illu:tarjetas",
+      "card_from_session": 0
+    },
+    {
+      "id": "sin-pantalla",
+      "label": "Sin pantalla",
+      "scene": "tarjetas",
+      "ambience": "calma",
+      "palette": {
+        "wall": "#e0a24a",
+        "lip": "#bd8331",
+        "r0": "#ecbf7a",
+        "r1": "#f0c98c",
+        "r2": "#f3d39f",
+        "floor": "#f6dcb2",
+        "accent": "#8a5310"
+      },
+      "sign": {
+        "title": "También sin pantalla",
+        "sub": "Tarjetas de vocales"
+      },
+      "notes": [
+        [
+          "Señalar"
+        ],
+        [
+          "Comparar"
+        ],
+        [
+          "Agrupar"
+        ]
+      ],
+      "fallback_art": "illu:tarjetas",
+      "card_from_session": 1,
+      "touch": {
+        "label": "Voltea una tarjeta",
+        "items": [
+          {
+            "id": "tarjeta-a",
+            "text": "A",
+            "say": "a"
+          },
+          {
+            "id": "tarjeta-e",
+            "text": "E",
+            "say": "e"
+          },
+          {
+            "id": "tarjeta-i",
+            "text": "I",
+            "say": "i"
+          },
+          {
+            "id": "tarjeta-o",
+            "text": "O",
+            "say": "o"
+          },
+          {
+            "id": "tarjeta-u",
+            "text": "U",
+            "say": "u"
+          }
+        ]
+      }
+    },
+    {
+      "id": "sesion",
+      "label": "Sesión sugerida",
+      "scene": "pizarraPasos",
+      "ambience": "calma",
+      "palette": {
+        "wall": "#6f8f6a",
+        "lip": "#577553",
+        "r0": "#97b292",
+        "r1": "#a5bca1",
+        "r2": "#b3c6b0",
+        "floor": "#c1d0be",
+        "accent": "#36532f"
+      },
+      "sign": {
+        "title": "Sugerencia para tu próxima sesión",
+        "sub": "Paso a paso"
+      },
+      "steps_from": "session",
+      "fallback_art": "illu:pizarron",
+      "card": {
+        "title": "Sugerencia para tu próxima sesión",
+        "text": "Objetivo observable: reconocer una vocal entre otras letras. Materiales: Tuti o tarjetas de papel.",
+        "actions": [
+          {
+            "label": "Ver la ficha completa",
+            "panel": true,
+            "style": "primary"
+          }
+        ]
+      },
+      "panel": {
+        "type": "session",
+        "title": "Ficha de sesión"
+      }
+    },
+    {
+      "id": "por-definir",
+      "label": "Por definir",
+      "scene": "cajas",
+      "ambience": "calma",
+      "palette": {
+        "wall": "#b9a58a",
+        "lip": "#9a8669",
+        "r0": "#cdbda6",
+        "r1": "#d5c7b3",
+        "r2": "#ddd1c0",
+        "floor": "#e4dacc",
+        "accent": "#5e4a2c"
+      },
+      "sign": {
+        "title": "Lo que aún está por definir",
+        "sub": "Recursos abiertos, sin cuentas"
+      },
+      "boxes_from": "pending",
+      "fallback_art": "illu:tarjetas",
+      "card": {
+        "title": "Lo que aún está por definir",
+        "text": "Esta sala reúne recursos abiertos. No es una plataforma con cuentas ni guarda datos de tu grupo.",
+        "actions": [
+          {
+            "label": "Compartir la guía con las familias",
+            "href": "hogar/#isla-mayusculas",
+            "style": "primary"
+          },
+          {
+            "label": "Ver la lista",
+            "panel": true,
+            "style": "secondary"
+          },
+          {
+            "label": "Explorar los recursos",
+            "href": "#explorar",
+            "home": true,
+            "style": "link"
+          }
+        ]
+      },
+      "panel": {
+        "type": "pending",
+        "title": "Por definir"
+      }
+    }
+  ]
+}

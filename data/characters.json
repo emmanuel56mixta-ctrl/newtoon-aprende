@@ -1,0 +1,58 @@
+{
+  "characters": [
+    {
+      "id": "kikino",
+      "name": "Kikino",
+      "species": "mono",
+      "role": "Mascota oficial y guía transversal",
+      "appears_in_universe": true,
+      "allowed_islands": "todas (como guía)",
+      "voice": "Sin voz canónica. Sus mensajes se muestran como texto; la voz del navegador no lo representa.",
+      "assets": {
+        "cutout": "assets/characters/kikino-frente.webp",
+        "sticker": "assets/characters/kikino-frente-sticker.webp"
+      },
+      "alt": "Kikino, un mono azul con cara y panza amarillas, sonríe de frente",
+      "public_text": "La mascota de Newtoon. Te recibe y te guía en cada visita."
+    },
+    {
+      "id": "tuti",
+      "name": "Tuti",
+      "species": "pez",
+      "role": "Conduce la ruta piloto de vocales y lenguaje",
+      "appears_in_universe": true,
+      "allowed_islands": [
+        "isla-mayusculas"
+      ],
+      "voice": "Sin voz canónica. La voz del navegador solo lee vocales y palabras, no habla como Tuti.",
+      "assets": {
+        "cutout": "assets/characters/tuti-lado.webp",
+        "sticker": "assets/characters/tuti-lado-sticker.webp"
+      },
+      "alt": "Tuti, un pez rosado con aletas de lunares y un estampado de rombos de colores",
+      "public_text": "Conduce la ruta de vocales en Isla Mayúsculas."
+    },
+    {
+      "id": "rubin",
+      "name": "Rubin",
+      "species": "robot",
+      "role": null,
+      "appears_in_universe": false,
+      "assets": {
+        "cutout": "assets/characters/rubin-frente.webp"
+      },
+      "shown_on": [
+        "Inicio · Conoce Newtoon (solo presentación, sin rol)"
+      ],
+      "alt": "Rubin, un robot amarillo con foco en la cabeza, ojos verdes y una rueda",
+      "public_text": "También es parte de Newtoon. Pronto conocerás su historia."
+    }
+  ],
+  "brand_elements": [
+    {
+      "id": "manzana",
+      "type": "elemento gráfico de marca",
+      "is_character": false
+    }
+  ]
+}

@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="es-419">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Recreo Newtoon</title>
+<meta name="description" content="Recreo Newtoon: cuentos, juegos y rutas para aprender jugando, en preescolar y primaria baja.">
+<meta name="theme-color" content="#e9dcc6">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<!-- nt-root: ruta a la raíz del proyecto (data/, assets/, vendor/, shared/) -->
+<meta name="nt-root" content="../">
+<link rel="stylesheet" href="../shared/paper.css">
+<link rel="stylesheet" href="recreo.css">
+<!-- Three.js alojado en el proyecto (versión fija 0.165.0): sin dependencia de CDN -->
+<script type="importmap">
+{ "imports": { "three": "../vendor/three/three.module.min.js", "three/addons/": "../vendor/three/addons/" } }
+</script>
+</head>
+<body class="is-loading">
+<a class="skip" href="#isla" data-i18n="skip">Saltar al contenido</a>
+
+<!-- Escenario 2D: siempre presente; es el respaldo si el mundo 3D no carga -->
+<div class="stage2d" id="stage2d" aria-hidden="true"></div>
+<canvas id="world" class="world" aria-hidden="true"></canvas>
+<div class="vignette" aria-hidden="true"></div>
+
+<header class="top">
+  <a class="brand" id="brand" href="#"><img id="brandLogo" alt="" width="180" height="59"></a>
+  <div class="tools">
+    <button class="tbtn" id="settingsBtn" type="button" aria-haspopup="dialog" aria-controls="settings"><span data-i18n="info">Ajustes</span></button>
+    <button class="tbtn icon" id="musicBtn" type="button" aria-pressed="true">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18V6l10-2v12"/><circle cx="6.5" cy="18" r="2.5" fill="currentColor"/><circle cx="16.5" cy="16" r="2.5" fill="currentColor"/><path class="off" d="M4 4l16 16"/></svg>
+    </button>
+    <button class="tbtn icon" id="soundBtn" type="button" aria-pressed="true">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 9h4l5-4v14l-5-4H4z" fill="currentColor"/><path class="on" d="M16.5 8.5a5 5 0 0 1 0 7"/><path class="on" d="M19 6a8.5 8.5 0 0 1 0 12"/><path class="off" d="M17 9l5 6M22 9l-5 6"/></svg>
+    </button>
+  </div>
+</header>
+
+<main class="dock" id="isla" tabindex="-1">
+  <section class="card paper pin" id="card" aria-labelledby="islandTitle">
+    <p class="eyebrow" id="islandNum"></p>
+    <h1 class="title" id="islandTitle"></h1>
+    <p class="kid" id="islandText"></p>
+    <div class="exps" id="exps" role="group"></div>
+    <div class="actions">
+      <a class="cta" id="cta" href="#"><span id="ctaText"></span> <span aria-hidden="true">↗</span></a>
+      <button class="family-btn" id="familyBtn" type="button" aria-controls="family" aria-expanded="false">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="8" cy="7" r="3"/><circle cx="17" cy="9" r="2.3"/><path d="M2.5 20c.6-4 3-6 5.5-6s4.9 2 5.5 6M13.5 20c.4-3 1.8-4.6 3.5-4.6s3.1 1.6 3.5 4.6"/></svg>
+        <span data-i18n="family_open">Para familias</span>
+      </button>
+    </div>
+    <div class="touch" id="touch" hidden>
+      <p class="touch-label" id="touchLabel"></p>
+      <div class="touch-row" id="touchRow"></div>
+    </div>
+    <a class="more" id="more" href="#"></a>
+  </section>
+
+  <nav class="scrub" id="scrub" aria-label="Islas del Recreo">
+    <div class="stops" id="stops"></div>
+    <div class="row">
+      <button class="navb" id="prev" type="button"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg></button>
+      <input type="range" id="slider" min="0" max="1000" value="0">
+      <button class="navb" id="next" type="button"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg></button>
+    </div>
+    <p class="hint" id="hint" data-i18n="drag_hint"></p>
+  </nav>
+</main>
+
+<!-- Capa para la persona adulta: no es modal, no detiene la actividad -->
+<div class="family paper" id="family" role="dialog" aria-modal="false" aria-labelledby="famTitle" hidden>
+  <div class="fam-head">
+    <p class="fam-kicker" data-i18n="family_title"></p>
+    <h2 id="famTitle" tabindex="-1"></h2>
+    <button class="close" id="famClose" type="button"><span aria-hidden="true">×</span></button>
+  </div>
+  <div class="fam-body" id="famBody" tabindex="0" role="region" aria-label="Guía"></div>
+</div>
+
+<div class="panel" id="settings" role="dialog" aria-modal="true" aria-labelledby="setTitle" hidden>
+  <div class="sheet paper">
+    <button class="close" id="setClose" type="button"><span aria-hidden="true">×</span></button>
+    <h2 id="setTitle" data-i18n="info_title"></h2>
+    <div class="switches">
+      <label class="switch"><input type="checkbox" id="optMusic"><span data-i18n="music_on"></span></label>
+      <label class="switch"><input type="checkbox" id="optSound"><span data-i18n="sound_on"></span></label>
+      <label class="switch"><input type="checkbox" id="optLow"><span data-i18n="quality_label"></span></label>
+      <p class="help" data-i18n="quality_help"></p>
+      <p class="help" data-i18n="motion_note"></p>
+    </div>
+    <h3 data-i18n="adults_links"></h3>
+    <ul class="adult-links" id="adultLinks"></ul>
+  </div>
+</div>
+
+<div class="gate" id="gate" role="dialog" aria-modal="true" aria-labelledby="gateTitle">
+  <div class="gate-card">
+    <img class="gate-logo" id="gateLogo" alt="" width="260" height="85">
+    <h2 id="gateTitle" data-i18n="gate_title"></h2>
+    <p class="gate-sub" data-i18n="gate_sub"></p>
+    <button class="enter" id="enterBtn" type="button" data-i18n="gate_enter"></button>
+    <button class="quiet" id="quietBtn" type="button" data-i18n="gate_quiet"></button>
+    <p class="gate-hint" data-i18n="gate_hint"></p>
+    <p class="gate-status" id="gateStatus" role="status"></p>
+  </div>
+</div>
+
+<p class="notice paper" id="notice" role="status" hidden></p>
+<div class="bubble" id="bubble" aria-hidden="true"></div>
+<div class="tip" id="tip" aria-hidden="true"></div>
+<div class="sr-only" id="live" aria-live="polite"></div>
+
+<div class="data-error paper" id="dataError" hidden>
+  <p>No pudimos cargar el Recreo en este momento.</p>
+  <p><a href="https://newtoonaprende.com/#explorar">Explorar los recursos publicados</a></p>
+</div>
+<noscript><div class="data-error paper"><p>Activa JavaScript para recorrer el Recreo.</p><p><a href="https://newtoonaprende.com/#explorar">Explorar los recursos publicados</a></p></div></noscript>
+
+<script type="module" src="recreo.js"></script>
+</body>
+</html>

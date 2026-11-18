@@ -1,0 +1,394 @@
+{
+  "id": "instituciones",
+  "surface": "instituciones",
+  "title": "Instituciones · Newtoon",
+  "zone_word": "Sección",
+  "tone": "sobrio",
+  "gate": {
+    "title": "Instituciones",
+    "sub": "Para escuelas, instituciones y redes educativas"
+  },
+  "start": "propuesta",
+  "adult": true,
+  "zones": [
+    {
+      "id": "propuesta",
+      "label": "Propuesta",
+      "scene": "propuesta",
+      "ambience": "calma",
+      "palette": {
+        "wall": "#a99b84",
+        "lip": "#8b7d66",
+        "r0": "#c3b8a4",
+        "r1": "#cbc1af",
+        "r2": "#d3cabb",
+        "floor": "#dbd3c6",
+        "accent": "#4f4433"
+      },
+      "sign": {
+        "title": "Continuidad educativa",
+        "sub": "para cada grupo, todo el ciclo"
+      },
+      "words": [
+        "Descubrir",
+        "Practicar",
+        "Repetir"
+      ],
+      "notes": [
+        [
+          "No vendemos videos",
+          "ni archivos sueltos"
+        ]
+      ],
+      "fallback_art": "char:kikino",
+      "card": {
+        "title": "Lo que a los niños les encanta, convertido en experiencias que el grupo repite",
+        "text": "Experiencias breves que la docente puede iniciar, acompañar, repetir y observar con su grupo, en el aula y en casa.",
+        "actions": [
+          {
+            "label": "Explorar un piloto",
+            "href": "#contacto",
+            "home": true,
+            "style": "primary",
+            "cta_id": "hero_piloto"
+          },
+          {
+            "label": "Ver una sesión en la Sala de docentes",
+            "href": "sala-docentes/",
+            "style": "secondary",
+            "cta_id": "hero_docentes"
+          }
+        ]
+      }
+    },
+    {
+      "id": "problema",
+      "label": "El reto",
+      "scene": "muroNotas",
+      "ambience": "calma",
+      "palette": {
+        "wall": "#8f9fb0",
+        "lip": "#738396",
+        "r0": "#adbac7",
+        "r1": "#b8c3ce",
+        "r2": "#c3ccd6",
+        "floor": "#ced6de",
+        "accent": "#3a4a5c"
+      },
+      "sign": {
+        "title": "El reto en el aula",
+        "sub": "Lo que escuchamos de docentes"
+      },
+      "wall": [
+        {
+          "title": "Mucho contenido, poca secuencia",
+          "text": "Hay videos y juegos de sobra, pero rara vez forman un recorrido."
+        },
+        {
+          "title": "Del video al aprendizaje",
+          "text": "Convertir un video en una actividad con propósito lleva tiempo."
+        },
+        {
+          "title": "Falta de continuidad",
+          "text": "Lo que se ve un día se olvida si no se retoma."
+        },
+        {
+          "title": "Materiales sencillos",
+          "text": "El aula necesita apoyos que se impriman y funcionen sin conexión."
+        },
+        {
+          "title": "Familias sin sobrecarga",
+          "text": "Acompañar sin tareas diarias ni plataformas complicadas."
+        }
+      ],
+      "fallback_art": "illu:tarjetas",
+      "card": {
+        "title": "El reto en el aula",
+        "text": "Mucho contenido sin secuencia, poco tiempo para convertirlo en aprendizaje y familias que quieren acompañar sin sobrecarga.",
+        "actions": [
+          {
+            "label": "Leer los cinco retos",
+            "panel": true,
+            "style": "primary"
+          }
+        ]
+      },
+      "panel": {
+        "type": "wall",
+        "title": "El reto en el aula"
+      }
+    },
+    {
+      "id": "como-funciona",
+      "label": "Cómo funciona",
+      "scene": "camino",
+      "ambience": "calma",
+      "palette": {
+        "wall": "#9aa985",
+        "lip": "#7d8c68",
+        "r0": "#b6c2a5",
+        "r1": "#c0cab0",
+        "r2": "#cad3bc",
+        "floor": "#d4dbc8",
+        "accent": "#435230"
+      },
+      "sign": {
+        "title": "Cómo funciona",
+        "sub": "Un ciclo que se repite"
+      },
+      "thesis": "YouTube descubre. Newtoon convierte el descubrimiento en ritual. El aula genera repetición.",
+      "path": [
+        "Descubrir",
+        "Iniciar",
+        "Acompañar",
+        "Practicar",
+        "Observar",
+        "Volver"
+      ],
+      "fallback_art": "illu:libro",
+      "card": {
+        "title": "YouTube descubre. Newtoon lo convierte en ritual.",
+        "text": "Descubrir, iniciar, acompañar, practicar, observar y volver: el aula genera la repetición.",
+        "actions": [
+          {
+            "label": "Ver los seis pasos",
+            "panel": true,
+            "style": "primary"
+          }
+        ]
+      },
+      "panel": {
+        "type": "steps",
+        "title": "Cómo funciona",
+        "steps": [
+          "Descubrir: un personaje o un cuento despierta la curiosidad del grupo.",
+          "Iniciar: la docente abre una experiencia breve con un objetivo claro.",
+          "Acompañar: una persona adulta guía, pregunta y deja que el grupo pruebe.",
+          "Practicar: se juega en pantalla o con materiales de papel, sin conexión.",
+          "Observar: se mira una señal sencilla de aprendizaje, a nivel de grupo.",
+          "Volver: la misma experiencia se retoma otro día, con un nuevo reto."
+        ]
+      }
+    },
+    {
+      "id": "que-obtiene",
+      "label": "Qué incluye",
+      "scene": "cajas",
+      "ambience": "calma",
+      "palette": {
+        "wall": "#c2a57f",
+        "lip": "#a3865f",
+        "r0": "#d4bf9f",
+        "r1": "#dac7ab",
+        "r2": "#e0d0b8",
+        "floor": "#e6d9c5",
+        "accent": "#5c4424"
+      },
+      "sign": {
+        "title": "Qué incluye hoy",
+        "sub": "Solo lo que existe o está aprobado"
+      },
+      "boxes": [
+        {
+          "label": "Ruta de vocales",
+          "status": "ok"
+        },
+        {
+          "label": "Actividades repetibles",
+          "status": "ok"
+        },
+        {
+          "label": "Materiales imprimibles",
+          "status": "ok"
+        },
+        {
+          "label": "Orientación docente",
+          "status": "ok"
+        },
+        {
+          "label": "Guías para familias",
+          "status": "ok"
+        },
+        {
+          "label": "Alternativas sin conexión",
+          "status": "ok"
+        },
+        {
+          "label": "Continuidad por grupo o ciclo",
+          "status": "wip"
+        },
+        {
+          "label": "Evidencia agregada",
+          "status": "wip"
+        }
+      ],
+      "fallback_art": "illu:tarjetas",
+      "card": {
+        "title": "Qué incluye hoy",
+        "text": "Seis componentes disponibles y dos en definición. Solo listamos lo que ya existe o está aprobado.",
+        "actions": [
+          {
+            "label": "Ver el detalle",
+            "panel": true,
+            "style": "primary"
+          }
+        ]
+      },
+      "panel": {
+        "type": "status",
+        "title": "Qué incluye hoy",
+        "items": [
+          {
+            "status": "ok",
+            "title": "Ruta de vocales",
+            "text": "Isla Mayúsculas, con Tuti, organizada alrededor de una habilidad: reconocer vocales."
+          },
+          {
+            "status": "ok",
+            "title": "Actividades repetibles",
+            "text": "Experiencias breves pensadas para jugarse varias veces y retomarse en otras sesiones."
+          },
+          {
+            "status": "ok",
+            "title": "Materiales imprimibles",
+            "text": "Tarjetas de vocales para señalar, comparar y agrupar sin pantalla."
+          },
+          {
+            "status": "ok",
+            "title": "Orientación docente",
+            "text": "Sugerencias de sesión con objetivo observable en la Sala de docentes."
+          },
+          {
+            "status": "ok",
+            "title": "Acompañamiento familiar",
+            "text": "Guías breves para la persona adulta junto a cada actividad."
+          },
+          {
+            "status": "ok",
+            "title": "Alternativas sin conexión",
+            "text": "Cada guía propone una versión con papel u objetos de la casa."
+          },
+          {
+            "status": "wip",
+            "title": "Continuidad por grupo o ciclo",
+            "text": "El acceso de grupo y la secuencia por ciclo están por definirse."
+          },
+          {
+            "status": "wip",
+            "title": "Evidencia agregada",
+            "text": "Seguimiento a nivel de grupo, sin datos individuales, aún en diseño."
+          }
+        ]
+      }
+    },
+    {
+      "id": "privacidad",
+      "aliases": [
+        "pilotos"
+      ],
+      "label": "Privacidad y pilotos",
+      "scene": "muroNotas",
+      "icon": "candado",
+      "ambience": "calma",
+      "palette": {
+        "wall": "#8fa3a0",
+        "lip": "#738784",
+        "r0": "#adbebb",
+        "r1": "#b8c7c4",
+        "r2": "#c3d0ce",
+        "floor": "#ced9d7",
+        "accent": "#36504c"
+      },
+      "sign": {
+        "title": "Privacidad y pilotos",
+        "sub": "Empezamos por una conversación"
+      },
+      "wall": [
+        {
+          "title": "Sin cuentas infantiles",
+          "text": "No pedimos nombres, correos ni datos de niñas o niños."
+        },
+        {
+          "title": "Métricas agregadas",
+          "text": "Cualquier medición de uso es por grupo, nunca por alumno."
+        },
+        {
+          "title": "Formularios para adultos",
+          "text": "Sin píxeles publicitarios en superficies infantiles."
+        },
+        {
+          "title": "Pilotos",
+          "text": "Escuelas, instituciones, redes educativas y proyectos piloto."
+        }
+      ],
+      "fallback_art": "illu:tarjetas",
+      "card": {
+        "title": "Hablemos sobre una implementación",
+        "text": "Privacidad desde el diseño y pilotos definidos antes de empezar. Las condiciones, la disponibilidad y los precios están por definir.",
+        "actions": [
+          {
+            "label": "Solicitar información",
+            "href": "#contacto",
+            "home": true,
+            "style": "primary",
+            "cta_id": "final_info"
+          },
+          {
+            "label": "Privacidad y pilotos",
+            "panel": true,
+            "style": "secondary"
+          }
+        ]
+      },
+      "panel": {
+        "type": "sections",
+        "title": "Privacidad y pilotos",
+        "sections": [
+          {
+            "title": "Privacidad desde el diseño",
+            "items": [
+              {
+                "title": "No hay cuentas infantiles",
+                "text": "No solicitamos nombres, correos ni otros datos que identifiquen a niñas o niños."
+              },
+              {
+                "title": "Medición agregada",
+                "text": "Cualquier medición de uso es agregada, nunca por alumno."
+              },
+              {
+                "title": "Formularios solo para adultos",
+                "text": "No usamos píxeles publicitarios en las superficies infantiles."
+              },
+              {
+                "title": "Servicios de terceros",
+                "text": "Algunas experiencias se apoyan en servicios como YouTube, que aplican sus propias políticas."
+              }
+            ]
+          },
+          {
+            "title": "Pilotos y colaboración",
+            "items": [
+              {
+                "title": "Escuelas",
+                "text": "Un grupo o un grado que quiera probar una ruta durante varias semanas."
+              },
+              {
+                "title": "Instituciones",
+                "text": "Organizaciones que acompañan a varias escuelas o docentes."
+              },
+              {
+                "title": "Redes educativas",
+                "text": "Comunidades que comparten prácticas y materiales."
+              },
+              {
+                "title": "Proyectos piloto",
+                "text": "Alcance, acompañamiento y evidencia agregada definidos antes de empezar."
+              }
+            ]
+          }
+        ],
+        "note": "Contacto exclusivo para personas adultas. No envíes listas de alumnos ni datos personales de niñas o niños. Las condiciones, la disponibilidad y los precios del programa están por definir."
+      }
+    }
+  ]
+}

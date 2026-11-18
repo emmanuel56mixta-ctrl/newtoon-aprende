@@ -1,0 +1,155 @@
+{
+  "guides": [
+    {
+      "activity_id": "isla-mayusculas",
+      "title": "Isla Mayúsculas",
+      "domain": "Lenguaje",
+      "skill": "Reconocer vocales",
+      "observable_objective": "Reconoce la vocal elegida entre otras letras.",
+      "duration_minutes": 8,
+      "materials": [
+        "Papel",
+        "Lápiz o colores",
+        "Un libro de la casa (opcional)"
+      ],
+      "before": "Elijan juntos una vocal para jugar hoy.",
+      "during": "Deja que pruebe primero. Da una pista solo si la pide.",
+      "after": "Busquen esa vocal en un libro o dibújenla en papel. No hace falta imprimir.",
+      "prompts": [
+        "¿Qué vocal encontraste?",
+        "¿Dónde más la ves?",
+        "¿Qué palabra empieza con esa vocal?"
+      ],
+      "observe": [
+        "Si señala la vocal sin ayuda.",
+        "Si la distingue de otras letras.",
+        "Si quiere jugar con otra vocal."
+      ],
+      "help_levels": [
+        "Sin ayuda: la encuentra por su cuenta.",
+        "Con pista: le señalas la parte de la página donde está.",
+        "Con modelo: la señalan juntos y luego lo intenta otra vez."
+      ],
+      "evidence": "Señala la vocal entre otras letras, con o sin ayuda.",
+      "low_tech_alternative": "Usen tarjetas de vocales o letras dibujadas en papel para señalar, comparar y agrupar.",
+      "download_url": "https://newtoonaprende.com/materiales/tarjetas-vocales-newtoon.pdf",
+      "download_label": "Tarjetas de vocales (PDF)",
+      "availability": "disponible",
+      "review_status": "BASADA_EN_PUBLICADO"
+    },
+    {
+      "activity_id": "lectoaventuras",
+      "title": "Cuentos de Lectoaventuras",
+      "domain": "Lenguaje",
+      "skill": "Comprender y conversar sobre un cuento",
+      "observable_objective": "Cuenta con sus palabras algo que pasó en el cuento.",
+      "duration_minutes": 10,
+      "materials": [
+        "Papel y colores para dibujar (opcional)"
+      ],
+      "before": "Elijan juntos uno de los cuentos de Lectoaventuras.",
+      "during": "Lean sin prisa. Hagan una pausa para que mire las imágenes y adivine qué pasará.",
+      "after": "Conversen sobre lo que descubrieron. Pueden cerrar con un dibujo del momento favorito.",
+      "prompts": [
+        "¿Qué te gustó más?",
+        "¿Qué crees que pasará después?",
+        "¿A quién se parece este personaje?"
+      ],
+      "observe": [
+        "Si recuerda lo que pasó.",
+        "Si usa palabras nuevas del cuento.",
+        "Si hace preguntas."
+      ],
+      "help_levels": [
+        "Sin ayuda: cuenta la historia por su cuenta.",
+        "Con pregunta: le preguntas qué pasó primero.",
+        "Con imágenes: vuelven a ver una ilustración y la describen juntos."
+      ],
+      "evidence": "Cuenta, dibuja o señala un momento del cuento.",
+      "low_tech_alternative": "Lean un libro de papel de la casa y conversen con las mismas preguntas.",
+      "download_url": "",
+      "download_label": "",
+      "availability": "disponible",
+      "review_status": "BASADA_EN_PUBLICADO"
+    },
+    {
+      "activity_id": "la-banda-imaginantes",
+      "title": "La Banda Imaginantes",
+      "domain": "Expresión artística",
+      "skill": "Reconocer instrumentos por su sonido",
+      "observable_objective": "Nombra o señala un instrumento después de escucharlo.",
+      "duration_minutes": 10,
+      "materials": [
+        "Objetos de la casa que suenen: una caja, una cuchara, un frasco con semillas"
+      ],
+      "before": "Pregunta qué instrumentos conoce y cómo cree que suenan.",
+      "during": "Antes de activar a cada músico, pídele que adivine qué instrumento sonará.",
+      "after": "Armen una banda con objetos de la casa y toquen una canción corta.",
+      "prompts": [
+        "¿Qué instrumento escuchaste?",
+        "¿Suena fuerte o suave?",
+        "¿Cuál te gustaría tocar?"
+      ],
+      "observe": [
+        "Si distingue un instrumento de otro.",
+        "Si sigue el ritmo con palmadas.",
+        "Si propone sus propios sonidos."
+      ],
+      "help_levels": [
+        "Sin ayuda: reconoce el instrumento al escucharlo.",
+        "Con pista: le das dos opciones para elegir.",
+        "Con modelo: lo escuchan juntos y lo imitan con la voz."
+      ],
+      "evidence": "Señala o nombra al menos un instrumento por su sonido.",
+      "low_tech_alternative": "Jueguen a adivinar sonidos con objetos de la casa sin pantalla.",
+      "download_url": "",
+      "download_label": "",
+      "availability": "disponible",
+      "review_status": "BORRADOR"
+    },
+    {
+      "activity_id": "pecesita-rescate-mar",
+      "title": "Pecesita al Rescate del Mar",
+      "domain": "Exploración del mundo natural",
+      "skill": "Identificar acciones para cuidar el agua",
+      "observable_objective": "Dice o muestra una acción para mantener limpio el mar.",
+      "duration_minutes": 10,
+      "materials": [
+        "Un recipiente con agua y objetos pequeños (opcional, con supervisión)"
+      ],
+      "before": "Pregunta qué vive en el mar y qué pasa cuando se ensucia.",
+      "during": "Acompaña el juego y comenten qué objetos no deberían estar en el agua.",
+      "after": "Revisen juntos un bote de basura de la casa y separen lo que se puede reutilizar.",
+      "prompts": [
+        "¿Qué encontraste en el mar?",
+        "¿Dónde va la basura?",
+        "¿Cómo ayudamos en casa?"
+      ],
+      "observe": [
+        "Si reconoce objetos que no pertenecen al mar.",
+        "Si propone una acción de cuidado."
+      ],
+      "help_levels": [
+        "Sin ayuda: propone una acción por su cuenta.",
+        "Con pregunta: le preguntas qué haría con una botella tirada.",
+        "Con modelo: muestras una acción y la repite."
+      ],
+      "evidence": "Menciona o realiza una acción de cuidado del agua.",
+      "low_tech_alternative": "Con supervisión, saquen objetos de un recipiente con agua usando una cuchara.",
+      "download_url": "",
+      "download_label": "",
+      "availability": "disponible",
+      "review_status": "BORRADOR"
+    }
+  ],
+  "general": {
+    "title": "Un momento de juego",
+    "steps": [
+      "Elijan juntos un cuento o un juego.",
+      "Acompaña la experiencia y deja que pruebe.",
+      "Cierren con una pregunta o un dibujo. Pueden repetir otro día."
+    ],
+    "note": "No necesitas una cuenta infantil. Tú eliges cuándo empezar, cuánto tiempo compartir y cuándo terminar.",
+    "review_status": "BASADA_EN_PUBLICADO"
+  }
+}

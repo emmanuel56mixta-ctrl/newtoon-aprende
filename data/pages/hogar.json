@@ -1,0 +1,197 @@
+{
+  "id": "hogar",
+  "surface": "hogar",
+  "title": "Hogar · Newtoon",
+  "zone_word": "Rincón",
+  "gate": {
+    "title": "Hogar",
+    "sub": "Compartan un juego o un cuento en familia"
+  },
+  "start": "en-casa",
+  "zones": [
+    {
+      "id": "en-casa",
+      "label": "En casa",
+      "scene": "sala",
+      "ambience": "calma",
+      "palette": {
+        "wall": "#d77a69",
+        "lip": "#b65e4f",
+        "r0": "#e6a091",
+        "r1": "#ecae9f",
+        "r2": "#f0bbad",
+        "floor": "#f2cbbd",
+        "accent": "#8e2f24"
+      },
+      "sign": {
+        "title": "Hogar",
+        "sub": "¡Aprendemos jugando!"
+      },
+      "notes": [
+        [
+          "Sin tareas",
+          "diarias"
+        ]
+      ],
+      "fallback_art": "illu:casa",
+      "card": {
+        "title": "Hogar",
+        "text": "Compartan un juego o un cuento en familia: una actividad breve, con acompañamiento adulto y sin tareas diarias obligatorias.",
+        "actions": [
+          {
+            "label": "Abrir Lectoaventuras",
+            "href": "https://lectoescritura.newtoonaprende.com/",
+            "style": "primary",
+            "external": true
+          },
+          {
+            "label": "A su ritmo",
+            "panel": true,
+            "style": "secondary"
+          }
+        ]
+      },
+      "panel": {
+        "type": "steps",
+        "title": "A su ritmo",
+        "from": "family_general"
+      }
+    },
+    {
+      "id": "lectoaventuras",
+      "label": "Leer y conversar",
+      "scene": "lectura",
+      "ambience": "bosque",
+      "palette": {
+        "wall": "#e0a24a",
+        "lip": "#bd8331",
+        "r0": "#ecbf7a",
+        "r1": "#f0c98c",
+        "r2": "#f3d39f",
+        "floor": "#f6dcb2",
+        "accent": "#8a5310"
+      },
+      "sign": {
+        "title": "Leer y conversar",
+        "sub": "Cuentos de Lectoaventuras"
+      },
+      "greeting": "¡Leamos juntos!",
+      "guide": "lectoaventuras",
+      "fallback_art": "illu:libro",
+      "panel": {
+        "type": "guide",
+        "activity_id": "lectoaventuras"
+      }
+    },
+    {
+      "id": "isla-mayusculas",
+      "aliases": [
+        "vocales"
+      ],
+      "label": "Vocales por la casa",
+      "scene": "vocalesCasa",
+      "ambience": "laguna",
+      "palette": {
+        "wall": "#e08a2c",
+        "lip": "#bb6c18",
+        "r0": "#eba24c",
+        "r1": "#4c6cbc",
+        "r2": "#4565b5",
+        "floor": "#3d5cab",
+        "accent": "#a4500a"
+      },
+      "sign": {
+        "title": "Vocales por la casa",
+        "sub": "Después de jugar con Tuti"
+      },
+      "greeting": "¡Busca una vocal!",
+      "guide": "isla-mayusculas",
+      "fallback_art": "char:tuti",
+      "panel": {
+        "type": "guide",
+        "activity_id": "isla-mayusculas"
+      },
+      "touch": {
+        "label": "Toca una vocal",
+        "items": [
+          {
+            "id": "vocal-a",
+            "text": "A",
+            "say": "a"
+          },
+          {
+            "id": "vocal-e",
+            "text": "E",
+            "say": "e"
+          },
+          {
+            "id": "vocal-i",
+            "text": "I",
+            "say": "i"
+          },
+          {
+            "id": "vocal-o",
+            "text": "O",
+            "say": "o"
+          },
+          {
+            "id": "vocal-u",
+            "text": "U",
+            "say": "u"
+          }
+        ]
+      }
+    },
+    {
+      "id": "la-banda-imaginantes",
+      "label": "Música en casa",
+      "scene": "musica",
+      "ambience": "patio",
+      "palette": {
+        "wall": "#5f9f9a",
+        "lip": "#477f7a",
+        "r0": "#8cbcb7",
+        "r1": "#9bc6c1",
+        "r2": "#aacfcb",
+        "floor": "#bad9d5",
+        "accent": "#2e625d"
+      },
+      "sign": {
+        "title": "Música en casa",
+        "sub": "La Banda Imaginantes"
+      },
+      "guide": "la-banda-imaginantes",
+      "fallback_art": "illu:musica",
+      "panel": {
+        "type": "guide",
+        "activity_id": "la-banda-imaginantes"
+      }
+    },
+    {
+      "id": "pecesita-rescate-mar",
+      "label": "Cuidar el agua",
+      "scene": "marLimpio",
+      "ambience": "laguna",
+      "palette": {
+        "wall": "#4f75c4",
+        "lip": "#3c5ca3",
+        "r0": "#8fa8de",
+        "r1": "#9fb4e3",
+        "r2": "#afc1e8",
+        "floor": "#bfcdec",
+        "accent": "#2a4686"
+      },
+      "sign": {
+        "title": "Cuidar el agua",
+        "sub": "Pecesita al Rescate del Mar"
+      },
+      "greeting": "¡El mar quedó limpio!",
+      "guide": "pecesita-rescate-mar",
+      "fallback_art": "illu:mar",
+      "panel": {
+        "type": "guide",
+        "activity_id": "pecesita-rescate-mar"
+      }
+    }
+  ]
+}

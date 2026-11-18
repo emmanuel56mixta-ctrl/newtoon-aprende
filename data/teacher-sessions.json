@@ -1,0 +1,42 @@
+{
+  "featured": "vocales-isla-mayusculas",
+  "sessions": [
+    {
+      "id": "vocales-isla-mayusculas",
+      "experience_id": "isla-mayusculas",
+      "title": "Sugerencia para tu próxima sesión",
+      "domain": "Lenguaje",
+      "skill": "Reconocer vocales",
+      "observable_objective": "Reconocer una vocal entre otras letras.",
+      "materials": [
+        "Isla Mayúsculas con Tuti",
+        "o tarjetas de papel"
+      ],
+      "steps": [
+        "Elige una vocal y el objetivo observable.",
+        "Juega una ronda con Tuti o con tarjetas de papel.",
+        "Pide al grupo que señale la vocal elegida y observa si necesita ayuda.",
+        "Retoma la experiencia en otra sesión. Si registras una observación, hazlo a nivel de grupo, sin nombres infantiles."
+      ],
+      "cards": [
+        {
+          "title": "Una experiencia, varias sesiones",
+          "text": "Reconozcan una vocal y búsquenla después en tarjetas. En otra sesión, repitan la experiencia con una vocal distinta.",
+          "link_label": "Abrir la experiencia",
+          "url": "https://newtoonaprende.com/recreo/isla-mayusculas/"
+        },
+        {
+          "title": "También sin pantalla",
+          "text": "Usen las tarjetas de vocales para señalar, comparar y agrupar. También pueden jugar dibujando las letras en papel.",
+          "link_label": "Abrir tarjetas de vocales (PDF)",
+          "url": "https://newtoonaprende.com/materiales/tarjetas-vocales-newtoon.pdf"
+        }
+      ]
+    }
+  ],
+  "pending": [
+    "El acceso de grupo",
+    "El seguimiento guardado",
+    "Las condiciones del programa de continuidad"
+  ]
+}

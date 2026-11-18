@@ -1,0 +1,326 @@
+{
+  "id": "inicio",
+  "surface": "inicio",
+  "title": "Newtoon Aprende",
+  "zone_word": "Parada",
+  "gate": {
+    "title": "Newtoon Aprende",
+    "sub": "Un mundo para aprender jugando"
+  },
+  "start": "bienvenida",
+  "zones": [
+    {
+      "id": "bienvenida",
+      "label": "Bienvenida",
+      "scene": "bienvenida",
+      "ambience": "bosque",
+      "palette": {
+        "wall": "#e9a64d",
+        "lip": "#c4832a",
+        "r0": "#8fac69",
+        "r1": "#9cba76",
+        "r2": "#a8c481",
+        "floor": "#b3cd8b",
+        "accent": "#8f4a0d"
+      },
+      "sign": {
+        "title": "Newtoon Aprende",
+        "sub": "¡Aprendemos jugando!"
+      },
+      "greeting": "¡Hola! Soy Kikino.",
+      "notes": [
+        [
+          "Preescolar y",
+          "primaria baja"
+        ],
+        [
+          "Sin cuentas",
+          "infantiles"
+        ],
+        [
+          "En casa",
+          "y en el aula"
+        ]
+      ],
+      "fallback_art": "char:kikino",
+      "card": {
+        "title": "Un mundo para aprender jugando",
+        "text": "Aventuras educativas breves para preescolar y primaria baja. En casa o en el aula, con una persona adulta cerca.",
+        "actions": [
+          {
+            "label": "Elegir mi espacio",
+            "zone": "espacios",
+            "style": "primary"
+          },
+          {
+            "label": "Antes de empezar",
+            "panel": true,
+            "style": "secondary"
+          }
+        ]
+      },
+      "panel": {
+        "type": "sections",
+        "title": "Antes de empezar",
+        "sections": [
+          {
+            "title": "Aprender también puede sentirse como una aventura",
+            "items": [
+              {
+                "title": "Preescolar y primaria baja",
+                "text": "Experiencias breves y claras, pensadas para las primeras etapas."
+              },
+              {
+                "title": "Sin cuentas infantiles",
+                "text": "Los recursos abiertos se usan sin registrarse y sin datos de niñas o niños."
+              },
+              {
+                "title": "Casa y aula",
+                "text": "Familias y docentes eligen cómo y cuándo usar cada actividad."
+              }
+            ]
+          },
+          {
+            "title": "Distintas formas de descubrir",
+            "items": [
+              {
+                "title": "Cuentos que despiertan curiosidad",
+                "text": "Historias para leer, mirar y conversar en compañía."
+              },
+              {
+                "title": "Juegos con propósito",
+                "text": "Cada juego practica algo concreto, como reconocer una vocal o un sonido."
+              },
+              {
+                "title": "Ideas fuera de la pantalla",
+                "text": "Propuestas con papel, objetos de la casa o tarjetas para seguir jugando."
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "espacios",
+      "aliases": [
+        "perfiles"
+      ],
+      "label": "Espacios",
+      "scene": "portales",
+      "ambience": "patio",
+      "palette": {
+        "wall": "#d77a69",
+        "lip": "#b65e4f",
+        "r0": "#e6a091",
+        "r1": "#ecae9f",
+        "r2": "#f0bbad",
+        "floor": "#f2cbbd",
+        "accent": "#a8412f"
+      },
+      "sign": {
+        "title": "¿Cómo quieres vivir Newtoon hoy?",
+        "sub": "Elige una puerta"
+      },
+      "fallback_art": "illu:casa",
+      "portals": [
+        {
+          "label": "Recreo Newtoon",
+          "href": "recreo/",
+          "color": "#7f9a5c",
+          "icon": "recreo"
+        },
+        {
+          "label": "Hogar",
+          "href": "hogar/",
+          "color": "#c9574a",
+          "icon": "casa"
+        },
+        {
+          "label": "Sala de docentes",
+          "href": "sala-docentes/",
+          "color": "#4e5ea8",
+          "icon": "pizarron"
+        },
+        {
+          "label": "Instituciones",
+          "href": "instituciones/",
+          "color": "#8f8a7a",
+          "icon": "edificio"
+        }
+      ],
+      "card": {
+        "title": "¿Cómo quieres vivir Newtoon hoy?",
+        "text": "Cada espacio tiene su propósito. Toca una puerta o elige aquí.",
+        "actions": [
+          {
+            "label": "Recreo Newtoon",
+            "href": "recreo/",
+            "style": "primary",
+            "hint": "Para niñas, niños y acompañantes"
+          },
+          {
+            "label": "Hogar",
+            "href": "hogar/",
+            "style": "secondary",
+            "hint": "Para familias"
+          },
+          {
+            "label": "Sala de docentes",
+            "href": "sala-docentes/",
+            "style": "secondary",
+            "hint": "Para docentes"
+          },
+          {
+            "label": "¿Representas a una escuela? Instituciones",
+            "href": "instituciones/",
+            "style": "link"
+          }
+        ]
+      }
+    },
+    {
+      "id": "explorar",
+      "aliases": [
+        "plataformas",
+        "videos",
+        "juegos",
+        "materiales"
+      ],
+      "label": "Explorar",
+      "scene": "biblioteca",
+      "ambience": "calma",
+      "palette": {
+        "wall": "#5f79c4",
+        "lip": "#4a60a3",
+        "r0": "#93a6dc",
+        "r1": "#a3b4e3",
+        "r2": "#b3c1e9",
+        "floor": "#c3cdee",
+        "accent": "#2f3b78"
+      },
+      "sign": {
+        "title": "Busca otra actividad",
+        "sub": "Toca un objeto para ver qué es"
+      },
+      "items_from": "catalog",
+      "fallback_art": "illu:libro",
+      "card": {
+        "title": "Busca otra actividad",
+        "text": "Cuentos, juegos, videos y materiales publicados. Toca un objeto de la mesa o abre el buscador.",
+        "actions": [
+          {
+            "label": "Abrir el buscador",
+            "panel": true,
+            "style": "primary"
+          }
+        ]
+      },
+      "panel": {
+        "type": "search",
+        "title": "Explorar"
+      }
+    },
+    {
+      "id": "conoce",
+      "label": "Personajes",
+      "scene": "escenario",
+      "ambience": "bosque",
+      "palette": {
+        "wall": "#9b86c9",
+        "lip": "#7d68ab",
+        "r0": "#b9a8dd",
+        "r1": "#c4b6e3",
+        "r2": "#cfc3e9",
+        "floor": "#dbd1ef",
+        "accent": "#55408a"
+      },
+      "sign": {
+        "title": "Un mundo de personajes",
+        "sub": "para aprender jugando"
+      },
+      "cast": [
+        {
+          "id": "kikino",
+          "name": "Kikino"
+        },
+        {
+          "id": "tuti",
+          "name": "Tuti"
+        },
+        {
+          "id": "rubin",
+          "name": "Rubin"
+        }
+      ],
+      "fallback_art": "char:kikino",
+      "card": {
+        "title": "Un mundo de personajes para aprender jugando",
+        "text": "Newtoon es una marca educativa para Hispanoamérica. Toca a cada personaje para conocerlo.",
+        "actions": [
+          {
+            "label": "Conocer a los personajes",
+            "panel": true,
+            "style": "primary"
+          }
+        ]
+      },
+      "panel": {
+        "type": "characters",
+        "title": "Conoce Newtoon"
+      }
+    },
+    {
+      "id": "contacto",
+      "label": "Contacto",
+      "scene": "buzon",
+      "ambience": "calma",
+      "palette": {
+        "wall": "#c9a77a",
+        "lip": "#a88757",
+        "r0": "#ddc29b",
+        "r1": "#e4cda9",
+        "r2": "#ead7b8",
+        "floor": "#efe0c6",
+        "accent": "#7a5520"
+      },
+      "sign": {
+        "title": "Para personas adultas",
+        "sub": "Escuelas e instituciones"
+      },
+      "notes": [
+        [
+          "Este espacio es",
+          "para personas adultas"
+        ],
+        [
+          "No incluyas datos",
+          "de niñas o niños"
+        ]
+      ],
+      "fallback_art": "illu:tarjetas",
+      "adult": true,
+      "card": {
+        "title": "¿Representas a una escuela o institución?",
+        "text": "Conoce la propuesta para tu comunidad educativa o escríbenos tus dudas sobre licencias y pilotos.",
+        "actions": [
+          {
+            "label": "Escribir un mensaje",
+            "panel": true,
+            "style": "primary",
+            "cta_id": "inicio_contacto"
+          },
+          {
+            "label": "Ver la propuesta para instituciones",
+            "href": "instituciones/",
+            "style": "link",
+            "cta_id": "inicio_instituciones"
+          }
+        ]
+      },
+      "panel": {
+        "type": "form",
+        "title": "Escríbenos"
+      }
+    }
+  ]
+}

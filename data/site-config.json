@@ -1,0 +1,128 @@
+{
+  "locale": "es-419",
+  "brand": {
+    "name": "Newtoon",
+    "slogan": "¡Aprendemos jugando!",
+    "logo": "assets/brand/newtoon-logo.webp",
+    "logo_alt": "Newtoon. ¡Aprendemos jugando!"
+  },
+  "recreo": {
+    "max_main_islands": 3,
+    "active_islands": [
+      "isla-mayusculas",
+      "isla-cuentos",
+      "isla-juegos"
+    ],
+    "start_island": "isla-cuentos",
+    "world_timeout_ms": 12000
+  },
+  "urls": {
+    "home": "https://newtoonaprende.com/",
+    "explorar": "https://newtoonaprende.com/#explorar",
+    "recreo": "https://newtoonaprende.com/recreo/",
+    "hogar": "https://newtoonaprende.com/hogar/",
+    "sala_docentes": "https://newtoonaprende.com/sala-docentes/",
+    "instituciones": "https://newtoonaprende.com/instituciones/",
+    "contacto_adultos": "https://newtoonaprende.com/#contacto",
+    "estudio": "https://newtoonaprende.com/estudio/"
+  },
+  "family_guides": {
+    "show_drafts": true
+  },
+  "analytics": {
+    "provider": null,
+    "allowed_events": [
+      "child_universe_viewed",
+      "island_selected",
+      "experience_opened",
+      "session_started",
+      "session_completed",
+      "experience_replayed",
+      "family_guidance_opened",
+      "family_download_clicked",
+      "institutions_landing_viewed",
+      "adult_cta_clicked"
+    ],
+    "allowed_payload_keys": [
+      "activity_id",
+      "cta_id",
+      "experience_id",
+      "island_id",
+      "locale",
+      "page",
+      "quality",
+      "sound",
+      "surface"
+    ]
+  },
+  "quality": {
+    "max_device_pixel_ratio": 1.75,
+    "low_device_pixel_ratio": 1,
+    "auto_low_when": {
+      "device_memory_gb_lte": 4,
+      "cpu_cores_lte": 4
+    }
+  },
+  "youtube": {
+    "host": "https://www.youtube-nocookie.com"
+  },
+  "nav": {
+    "surfaces": [
+      {
+        "id": "recreo",
+        "label": "Recreo Newtoon",
+        "href": "recreo/"
+      },
+      {
+        "id": "sala-docentes",
+        "label": "Sala de docentes",
+        "href": "sala-docentes/"
+      },
+      {
+        "id": "hogar",
+        "label": "Hogar",
+        "href": "hogar/"
+      },
+      {
+        "id": "instituciones",
+        "label": "Instituciones",
+        "href": "instituciones/"
+      }
+    ]
+  },
+  "contact": {
+    "endpoint": null,
+    "method": "POST",
+    "fallback_label": "Escríbenos por Facebook",
+    "fallback_url": "https://www.facebook.com/Newtoonmateriales"
+  },
+  "social": [
+    {
+      "id": "youtube",
+      "label": "YouTube",
+      "url": "https://www.youtube.com/channel/UCloN40dTP9pm37-pCFU_1UQ"
+    },
+    {
+      "id": "facebook",
+      "label": "Facebook",
+      "url": "https://www.facebook.com/Newtoonmateriales"
+    },
+    {
+      "id": "tiktok",
+      "label": "TikTok",
+      "url": "https://www.tiktok.com/@emmanuelelizondo55"
+    }
+  ],
+  "legal": [
+    {
+      "id": "privacidad",
+      "label": "Aviso de privacidad",
+      "url": ""
+    },
+    {
+      "id": "terminos",
+      "label": "Términos y uso de materiales",
+      "url": ""
+    }
+  ]
+}
